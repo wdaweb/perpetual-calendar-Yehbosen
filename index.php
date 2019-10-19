@@ -105,11 +105,11 @@ if(!empty($_GET['year'])){
 <?php
  if(($month-1)>0){
     ?>
-        <a href="wnl.php?month=<?=($month-1);?>&year=<?=$year;?>">上一月</a> |
+        <a href="?month=<?=($month-1);?>&year=<?=$year;?>">上一月</a> |
     <?php
       }else{
     ?>
-        <a href="wnl.php?month=12&year=<?=($year-1);?>">上一月</a> |
+        <a href="?month=12&year=<?=($year-1);?>">上一月</a> |
     <?php
      }
     ?>
@@ -117,11 +117,11 @@ if(!empty($_GET['year'])){
     <?php
     if(($month+1)<=12){
     ?>
-        <a href="wnl.php?month=<?=($month+1);?>&year=<?=$year;?>">下一月</a>
+        <a href="?month=<?=($month+1);?>&year=<?=$year;?>">下一月</a>
     <?php
     }else{
     ?>
-        <a href="wnl.php?month=1&year=<?=($year+1);?>">下一月</a>
+        <a href="?month=1&year=<?=($year+1);?>">下一月</a>
     <?php
     }
     ?>
